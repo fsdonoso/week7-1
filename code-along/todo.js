@@ -75,4 +75,4 @@ document.addEventListener('DOMContentLoaded', async function(event) {
 
 // Step 3: Hide the form when signed-out
 // Step 4: Create a sign-out button
-// Step 5: Add user ID to newly created post and only show my posts
+// Step 5: Add user ID to newly created to-do and only show my to-dos

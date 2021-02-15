@@ -100,4 +100,4 @@ firebase.auth().onAuthStateChanged(async function(user) {
   }
 })
 
-// Step 5: Add user ID to newly created post and only show my posts
+// Step 5: Add user ID to newly created to-do and only show my to-dos

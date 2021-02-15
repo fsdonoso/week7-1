@@ -19,7 +19,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
       let todoText = document.querySelector('#todo').value
 
       if (todoText.length > 0) {
-        // Step 5: Add user ID to newly created post
+        // Step 5: Add user ID to newly created to-do
         let docRef = await db.collection('todos').add({
           text: todoText,
           userId: user.uid
@@ -44,7 +44,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
       }
     })
 
-    // Step 5: Show only my posts
+    // Step 5: Show only my to-dos
     let querySnapshot = await db.collection('todos').where('userId', '==', user.uid).get()
     console.log(`Number to todos in collection: ${querySnapshot.size}`)
 
